@@ -1,0 +1,19 @@
+body {
+	font-family:tahoma,ËÎÌו;
+	font-size:14px;
+	font-size-adjust:none;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+.promptBar {
+	/* padding: 2px 2px; */
+	background: rgb(235, 239, 249) none repeat scroll 0% 0%;
+	-moz-background-clip: -moz-initial;
+	-moz-background-origin: -moz-initial;
+	-moz-background-inline-policy: -moz-initial;
+}
+#IEIcon {
+	border: 0pt none ;
+	margin: 2px 2px 0pt;
+}

@@ -1,0 +1,87 @@
+﻿<!ENTITY dialog.title "Настройки Coral IETab">
+<!ENTITY toolsmenu.label "Настройки Coral IETab">
+<!ENTITY toolbar.button.label "Coral IETab">
+<!ENTITY toolbar.button.display "Кнопка Coral IETab">
+<!ENTITY toolbar.button.tooltip0 "Left-Click: Переключить движок на текущей странице.">
+<!ENTITY toolbar.button.tooltip1 "Middle-Click: Переключить движок, открыв новую вкладку.">
+<!ENTITY toolbar.button.tooltip2 "Right-Click: Контекстное меню.">
+<!ENTITY popup.viewpage "Смотреть страницу в Coral IETab">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Открыть ссылку Coral IETab">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Открыть в Coral IETab">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Переключить движок">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "Открыть страницу во внешнем приложении">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "Открыть сссылку во внешнем приложении">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "Открыть во внешнем приложении">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "Открыть во внешнем приложении">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "Фильтр сайтов">
+<!ENTITY filter.enabled "Включить фильтр сайтов">
+<!ENTITY filter.column.rule "Правило">
+<!ENTITY filter.column.enabled "Активно">
+<!ENTITY filter.url.label "URL:">
+<!ENTITY filter.button.add "Добавить">
+<!ENTITY filter.button.delete "Удалить">
+<!ENTITY general.label "Общие настройки">
+<!ENTITY interface.caption "Показать в интерфейсе:">
+<!ENTITY interface.toolsmenu "Пункт в меню «Инструменты»">
+<!ENTITY interface.toolsmenu.icon "Значок в меню «Инструменты»">
+<!ENTITY interface.statusbar "Значок в строке статуса">
+<!ENTITY switch.caption "При переключении движка:">
+<!ENTITY switch.handleurl "Всегда открывать новые URL в текущем движке">
+<!ENTITY switch.alwaysnew "При смене движка открывать новую вкладку">
+<!ENTITY switch.focustab "При смене движка делать активной новую вкладку ">
+<!ENTITY context.label "Контекстное меню">
+<!ENTITY context.caption.tabsmenu "Показывать следующие пункты в контекстном меню заголовка вкладки:">
+<!ENTITY context.caption.pagelink "Показывать следующие пункты в контекстном меню страницы:">
+<!ENTITY context.caption.bookmark "Показывать следующие пункты в контекстном меню закладок:">
+<!ENTITY context.embed "Встроенный движок (Gecko)">
+<!ENTITY context.extapp "Внешнее приложение">
+<!ENTITY context.icon "Значок">
+<!ENTITY external.label "Внешнее приложение">
+<!ENTITY external.caption "Настройки внешнего приложения">
+<!ENTITY external.path.label "Путь к файлу приложения:">
+<!ENTITY external.param.label "Параметры:">
+<!ENTITY external.button.browse "Обзор…">
+<!ENTITY external.ctrlclick "Использовать Ctrl+Click в Coral IETab для открытия URL во внешнем приложении">
+<!ENTITY external.button.reset "Использовать Internet Explorer">
+<!ENTITY apply.label "Применить">
+<!ENTITY settings.label "Импорт/Экспорт…">
+<!ENTITY settings.default "Восстановить значения по умолчанию">
+<!ENTITY settings.import "Импортировать настройки…">
+<!ENTITY settings.export "Экспортировать настройки…">
+
+<!ENTITY rules.column "Правила">
+<!ENTITY enabled.column "Активно">
+<!ENTITY cookies.column "Синхронизировать Cookie">
+<!ENTITY useragent.column "Синхронизировать User-Agent">
+<!ENTITY switchback.column "Переключаться обратно в Gecko на новой странице">
+<!ENTITY settings.import-ietab "Импортировать настройки из IETab">
+<!ENTITY switch.show-prompt "Показывать подсказку «Повторить» при переключении в IE">
+<!ENTITY context.edit.label         "Редактировать правило">
+<!ENTITY context.moveup.label       "Сдвинуть вверх">
+<!ENTITY context.movedown.label     "Сдвинуть вниз">
+<!ENTITY context.enable.label       "Включить">
+<!ENTITY context.disable.label      "Отключить">
+<!ENTITY edit.label                 "Редактировать">
+<!ENTITY edit.accesskey             "E">
+<!ENTITY cut.label                  "Вырезать">
+<!ENTITY cut.accesskey              "T">
+<!ENTITY copy.label                 "Копировать">
+<!ENTITY copy.accesskey             "C">
+<!ENTITY paste.label                "Вставить">
+<!ENTITY paste.accesskey            "P">
+<!ENTITY remove.label               "Удалить">
+<!ENTITY remove.accesskey           "D">
+<!ENTITY context.switchEngine "Переключить движок">
+<!ENTITY context.switchEngineSafe "Переключить движок (без смены User Agent)">
+<!ENTITY context.switchEngineNoCookie "Переключить движок (не сохраняя Cookie)">
+<!ENTITY context.settings "Настройки…">
+<!ENTITY features.caption "Особые возможности:">
+<!ENTITY features.adblock "Поддерживать Adblock Plus (потребуется перезапустить браузер)">

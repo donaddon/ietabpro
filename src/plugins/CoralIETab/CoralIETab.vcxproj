@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{83E58821-6E95-44C2-9FDE-58186382A11D}</ProjectGuid>
+    <RootNamespace>CoralIETab</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\Projects\coralietab\Firefox\extensions\coralietab@mozdev.org\plugins</OutDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">np$(ProjectName)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">np$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../gecko-sdk/include;../gecko-sdk/internal;../3rdParty/pcre/pcre-8.02;../3rdParty/pcre/pcre-8.02/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;XP_WIN;_ENABLE_LOG_;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>xpcomglue_s.lib;xpcom.lib;nspr4.lib;embed_base_s.lib;plc4.lib;plds4.lib;wininet.lib;pcrecppd.lib;pcred.lib;pcreposixd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../gecko-sdk/lib;../3rdParty/PCRE/pcre-8.02/build/debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>CoralIETab.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>../gecko-sdk/include;../gecko-sdk/internal;../3rdParty/pcre/pcre-8.02;../3rdParty/pcre/pcre-8.02/build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;XP_WIN;HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>xpcomglue_s.lib;xpcom.lib;nspr4.lib;embed_base_s.lib;plc4.lib;plds4.lib;wininet.lib;pcrecpp.lib;pcre.lib;pcreposix.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)np$(ProjectName).dll</OutputFile>
+      <AdditionalLibraryDirectories>../gecko-sdk/lib;../3rdParty/PCRE/pcre-8.02/build/release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>CoralIETab.def</ModuleDefinitionFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CoralIETab.cpp" />
+    <ClCompile Include="CoralIETabNPObject.cpp" />
+    <ClCompile Include="CriticalSection.cpp" />
+    <ClCompile Include="HttpFilterSink.cpp" />
+    <ClCompile Include="IEHostWindow.cpp" />
+    <ClCompile Include="Misc.cpp" />
+    <ClCompile Include="nsConfigManager.cpp" />
+    <ClCompile Include="nsPluginInstance.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="adblockplus\adblockplus.cpp" />
+    <ClCompile Include="adblockplus\ElemHideFilters.cpp" />
+    <ClCompile Include="adblockplus\Filter.cpp" />
+    <ClCompile Include="adblockplus\FilterList.cpp" />
+    <ClCompile Include="adblockplus\FilterStorage.cpp" />
+    <ClCompile Include="adblockplus\HttpRequestFilter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CoralIETab.def" />
+    <None Include="..\3rdParty\passthru_app\ProtocolCF.inl" />
+    <None Include="..\3rdParty\passthru_app\ProtocolImpl.inl" />
+    <None Include="..\3rdParty\passthru_app\SinkPolicy.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CoralIETabNPObject.h" />
+    <ClInclude Include="CriticalSection.h" />
+    <ClInclude Include="HttpFilterSink.h" />
+    <ClInclude Include="IEHostWindow.h" />
+    <ClInclude Include="Misc.h" />
+    <ClInclude Include="nsConfigManager.h" />
+    <ClInclude Include="nsPluginInstance.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="..\3rdParty\passthru_app\PassthroughObject.h" />
+    <ClInclude Include="..\3rdParty\passthru_app\ProtocolCF.h" />
+    <ClInclude Include="..\3rdParty\passthru_app\ProtocolImpl.h" />
+    <ClInclude Include="..\3rdParty\passthru_app\SinkPolicy.h" />
+    <ClInclude Include="..\3rdParty\passthru_app\urlmon_ie7_extras.h" />
+    <ClInclude Include="adblockplus\adblockplus.h" />
+    <ClInclude Include="adblockplus\ElemHideFilters.h" />
+    <ClInclude Include="adblockplus\Filter.h" />
+    <ClInclude Include="adblockplus\FilterList.h" />
+    <ClInclude Include="adblockplus\FilterStorage.h" />
+    <ClInclude Include="adblockplus\HttpRequestFilters.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CoralIETab.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

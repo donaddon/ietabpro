@@ -1,0 +1,10 @@
+http://www.pcre.org/
+
+The latest release of the PCRE library is 8.02. You can download it from its official home via anonymous FTP:
+
+    * ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/
+
+You can also download via HTTP from the mirror at SourceForge.net:
+
+    * http://sourceforge.net/projects/pcre/files/
+

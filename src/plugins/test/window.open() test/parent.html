@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			var childWin = null;
+			var childDlg = null;
+			
+			/*
+			var features = [
+				"width=320,height=240,scrollbars=1,menubar=no,toolbar=no,resizable=no,top=100,left=100",
+				"toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,width=400,height=515,left=5px,top=5px"
+			];
+			for(var i=0; i<features.length;i++) {
+				var str = features[i];
+				str = str.replace(/\s/g, '').replace(/\bstatus=(false|no|0),/, '').replace(/\blocation=(false|no|0),/, '');
+				alert(str);
+			}
+			*/
+			
+			function onloadOpen()
+			{
+				// window.open("child.html");
+			}
+			
+			function openTest1()
+			{
+				var features = "width=320,height=240,scrollbars=1,menubar=no,toolbar=no,resizable=no,top=100,left=100";
+				childWin = window.open("", "test1", features);
+				document.forms['childFrm'].submit();
+				childWin.focus();
+			}
+			
+			function openTest2()
+			{
+				var features = "width=320,height=240,scrollbars=1,menubar=no,toolbar=no,location=no, status=no,resizable=no,top=100,left=100";
+				childWin = window.open("", "test1", features);
+				document.forms['childFrm'].submit();
+				childWin.focus();
+			}
+			
+			function showModalDialogTest()
+			{
+				var obj = new Object();
+				obj.p1 = "calling parameters";
+				ret = window.showModalDialog("modalDialog.html", obj, "dialogWidth=200px;dialogHeight=100px");
+				alert("return="+ret);
+			}
+			
+			function showModelessDialogTest()
+			{
+				var obj = {};
+				obj.p1 = "p1";
+				obj.p2 = window;
+				dlg = window.showModelessDialog("modelessDialog.html", obj, "dialogWidth=200px;dialogHeight=100px");
+				dlg.document.write("Hey!");
+			}
+			
+			function seeChild()
+			{
+				try
+				{
+					alert(childWin.document);
+				}
+				catch(e)
+				{
+					alert("Exception:" + e.toString());
+				}
+			}
+		</script>
+	</head>
+	<body onload="onloadOpen();">
+		<a href="child.html" target="childwnd">Click To Open New Window (target=childwnd)</a>
+		<br/>
+		<a href="child.html" target="_blank">Click To Open New Window (target=_blank)</a>
+		<br/>
+		<input type="button" value="window.open(), default statusbar and location bar" onclick="openTest1();"/><br/>
+		<input type="button" value="window.open(), statusbar and location bar is no" onclick="openTest2();"/><br/>
+		<input type="button" value="window.showModalDialog()" onclick="showModalDialogTest();"/>
+		<input id="modeless" type="button" value="window.showModelessDialog()" onclick="showModelessDialogTest();"/>
+		<br/>
+		<input type="button" value="See It" onclick="seeChild();"/>
+		
+		<form method="post" target="test1" action="http://www.google.cn/search" name="childFrm"><input type="hidden" value="test" name="q"></form>
+	</body>
+</html>

@@ -1,0 +1,87 @@
+<!ENTITY dialog.title "Opţiuni Coral IE Tab">
+<!ENTITY toolsmenu.label "Opţiuni Coral IE Tab">
+<!ENTITY toolbar.button.label "Coral IETab">
+<!ENTITY toolbar.button.display "Buton Coral IE Tab">
+<!ENTITY toolbar.button.tooltip0 "Clic-stânga: Comută motorul de interpretare a paginii curente.">
+<!ENTITY toolbar.button.tooltip1 "Clic-mijloc: Deschide pagina curentă într-o filă nouă şi comută motorul de interpretare.">
+<!ENTITY toolbar.button.tooltip2 "Clic-dreapta: Afişează meniul Coral IETab.">
+<!ENTITY popup.viewpage "Vizualizează pagina în Coral IE Tab">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Deschide legatura în Coral IE Tab">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Deschide în Coral IE Tab">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "Comută motorul de interpretare">
+<!ENTITY popup.tabbar.switch.key "C">
+<!ENTITY popup.viewpage.extapp "Vizualizează pagina în Aplic.Ext.">
+<!ENTITY popup.viewpage.extapp.key "x">
+<!ENTITY popup.viewlink.extapp "Deschide legătura în Aplic.Ext.">
+<!ENTITY popup.viewlink.extapp.key "x">
+<!ENTITY popup.bookmark.extapp "Deschide în Aplic.Ext.">
+<!ENTITY popup.bookmark.extapp.key "x">
+<!ENTITY popup.tabbar.extapp "Deschide în Aplic.Ext.">
+<!ENTITY popup.tabbar.extapp.key "x">
+<!ENTITY filter.label "Filtrare saituri">
+<!ENTITY filter.enabled "Activează filtrarea saiturilor">
+<!ENTITY filter.column.rule "Regulă">
+<!ENTITY filter.column.enabled "Activat">
+<!ENTITY filter.url.label "Adresă">
+<!ENTITY filter.button.add "Adaugă">
+<!ENTITY filter.button.delete "Şterge">
+<!ENTITY general.label "Opţiuni generale">
+<!ENTITY interface.caption "Interfaţă">
+<!ENTITY interface.toolsmenu "Afişează opţiunile în meniul Unelte">
+<!ENTITY interface.toolsmenu.icon "Afişează pictograma în meniul Unelte">
+<!ENTITY interface.statusbar "Afişează pictograma în bara de stare">
+<!ENTITY switch.caption "La comutarea motorului de interpretare">
+<!ENTITY switch.handleurl "Foloseşte întotdeauna motorul curent penru a deschide o adresă nouă">
+<!ENTITY switch.alwaysnew "Deschide o filă nouă">
+<!ENTITY switch.focustab "Selectează noua fila deschisă">
+<!ENTITY context.label "Meniu contextual">
+<!ENTITY context.caption.tabsmenu "Opţiuni bară de file">
+<!ENTITY context.caption.pagelink "Opţiuni conţinut pagină">
+<!ENTITY context.caption.bookmark "Opţiuni semne de carte">
+<!ENTITY context.embed "Motor incapsulat">
+<!ENTITY context.extapp "Aplicaţie externă">
+<!ENTITY context.icon "Afişează pictograma">
+<!ENTITY external.label "Aplicaţie externă">
+<!ENTITY external.caption "Opţiuni aplicaţie externă">
+<!ENTITY external.path.label "Cale şi denumire:">
+<!ENTITY external.param.label "Parametri:">
+<!ENTITY external.button.browse "Răsfoieşte">
+<!ENTITY external.ctrlclick "Foloseşte Ctrl+clic pe butonul Coral IE Tab pentru a deschide adresa în Aplic.Ext.">
+<!ENTITY external.button.reset "Foloseşte Internet Explorer">
+<!ENTITY apply.label "Aplică">
+<!ENTITY settings.label "Import/Export...">
+<!ENTITY settings.default "Iniţializează">
+<!ENTITY settings.import "Importă configuraţia...">
+<!ENTITY settings.export "Exportă configuraţia...">
+
+<!ENTITY rules.column "Reguli">
+<!ENTITY enabled.column "Activare">
+<!ENTITY cookies.column "Sincro cookie-uri">
+<!ENTITY useragent.column "Sincro User-Agent">
+<!ENTITY switchback.column "Revenire la Firefox în pagină nouă">
+<!ENTITY settings.import-ietab "Importă configuraţia din IE Tab">
+<!ENTITY switch.show-prompt "Afişează o casetă cu metode alternative la comutarea către IE">
+<!ENTITY context.edit.label         "Editează">
+<!ENTITY context.moveup.label       "Mută în sus">
+<!ENTITY context.movedown.label     "Mută în jos">
+<!ENTITY context.enable.label       "Activează">
+<!ENTITY context.disable.label      "Dezactivează">
+<!ENTITY edit.label                 "Editează">
+<!ENTITY edit.accesskey             "E">
+<!ENTITY cut.label                  "Decupează">
+<!ENTITY cut.accesskey              "D">
+<!ENTITY copy.label                 "Copiază">
+<!ENTITY copy.accesskey             "C">
+<!ENTITY paste.label                "Lipeşte">
+<!ENTITY paste.accesskey            "p">
+<!ENTITY remove.label               "Şterge">
+<!ENTITY remove.accesskey           "t">
+<!ENTITY context.switchEngine "Comută motorul de interpretare">
+<!ENTITY context.switchEngineSafe "Comută motorul de interpretare (fără User-Agent)">
+<!ENTITY context.switchEngineNoCookie "Comută motorul de interpretare (fără cookie-uri)">
+<!ENTITY context.settings "Opţiuni...">
+<!ENTITY features.caption "Opţiuni speciale">
+<!ENTITY features.adblock "Suport pentru Adblock Plus (necesită repornirea Firefox)">

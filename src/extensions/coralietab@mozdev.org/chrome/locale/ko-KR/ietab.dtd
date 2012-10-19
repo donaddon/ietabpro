@@ -1,0 +1,87 @@
+﻿<!ENTITY dialog.title "Coral IETab 설정">
+<!ENTITY toolsmenu.label "Coral IETab 설정...">
+<!ENTITY toolbar.button.label "Coral IETab">
+<!ENTITY toolbar.button.display "Coral IETab 버튼">
+<!ENTITY toolbar.button.tooltip0 "왼쪽 클릭 : 현재 탭에서 렌더링 엔진 전환">
+<!ENTITY toolbar.button.tooltip1 "가운데 클릭 : 새 탭으로 렌더링 엔진 전환">
+<!ENTITY toolbar.button.tooltip2 "오른쪽 클릭 : 컨텍스트 메뉴 보기">
+<!ENTITY popup.viewpage "Coral IETab으로 페이지 보기">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "Coral IETab으로 링크 열기">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "Coral IETab으로 열기">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "렌더링 엔진 전환">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "외부 렌더링 엔진으로 페이지 보기">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "외부 렌더링 엔진으로 링크 열기">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "외부 렌더링 엔진으로 열기">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "외부 렌더링 엔진으로 열기">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "사이트 필터">
+<!ENTITY filter.enabled "이 사이트들은 항상 내장된 IE 엔진을 사용합니다">
+<!ENTITY filter.column.rule "필터 규칙">
+<!ENTITY filter.column.enabled "사용하기">
+<!ENTITY filter.url.label "주소(URL)">
+<!ENTITY filter.button.add "추가">
+<!ENTITY filter.button.delete "삭제">
+<!ENTITY general.label "일반설정">
+<!ENTITY interface.caption "모양">
+<!ENTITY interface.toolsmenu "도구 메뉴 항목">
+<!ENTITY interface.toolsmenu.icon "도구 메뉴 아이콘">
+<!ENTITY interface.statusbar "상태 표시줄 아이콘">
+<!ENTITY switch.caption "렌더링 엔진을  전환할 때">
+<!ENTITY switch.handleurl "항상 현재 렌더링 엔진을 사용하여 열기">
+<!ENTITY switch.alwaysnew "항상 새 탭으로 열기">
+<!ENTITY switch.focustab "새 탭으로 열 때  활성화 하기">
+<!ENTITY context.label "확장 메뉴">
+<!ENTITY context.caption.tabsmenu "탭바 확장 메뉴 보기">
+<!ENTITY context.caption.pagelink "컨텐츠 영역 확장 메뉴 보기">
+<!ENTITY context.caption.bookmark "개인 북마크 확장 메뉴 보기">
+<!ENTITY context.embed "내장 엔진">
+<!ENTITY context.extapp "외부 렌더링 엔진">
+<!ENTITY context.icon "아이콘">
+<!ENTITY external.label "외부 렌더링 엔진">
+<!ENTITY external.caption "외부 렌더링 엔진 설정">
+<!ENTITY external.path.label "경로">
+<!ENTITY external.param.label "인수">
+<!ENTITY external.button.browse "찾아보기...">
+<!ENTITY external.ctrlclick "Coral IETab 버튼을 &quot;Ctrl + 왼쪽클릭&quot;하여 외부 렌더링 엔진으로 열기">
+<!ENTITY external.button.reset "Internet Explorer 사용하기">
+<!ENTITY apply.label "적용">
+<!ENTITY settings.label "가져오기/내보내기...">
+<!ENTITY settings.default "기본값 복원">
+<!ENTITY settings.import "설정 가져오기...">
+<!ENTITY settings.export "설정 내보내기...">
+
+<!ENTITY rules.column "필터 규칙">
+<!ENTITY enabled.column "사용하기">
+<!ENTITY cookies.column "쿠키 동기화">
+<!ENTITY useragent.column "브라우저 정보 동기화">
+<!ENTITY switchback.column "새 페이지 Firefox로 되돌리기">
+<!ENTITY settings.import-ietab "IETab 설정 가져오기">
+<!ENTITY switch.show-prompt "IE로 전환했을 때 프롬프트 보이기">
+<!ENTITY context.edit.label "규칙 편집...">
+<!ENTITY context.moveup.label "위로 이동">
+<!ENTITY context.movedown.label "아래로 이동">
+<!ENTITY context.enable.label "사용함">
+<!ENTITY context.disable.label "사용 안 함">
+<!ENTITY edit.label "편집...">
+<!ENTITY edit.accesskey "E">
+<!ENTITY cut.label "잘라내기">
+<!ENTITY cut.accesskey "T">
+<!ENTITY copy.label "복사">
+<!ENTITY copy.accesskey "C">
+<!ENTITY paste.label "붙여넣기">
+<!ENTITY paste.accesskey "P">
+<!ENTITY remove.label "삭제">
+<!ENTITY remove.accesskey "D">
+<!ENTITY context.switchEngine "렌더링 엔진 전환">
+<!ENTITY context.switchEngineSafe "브라우저 정보 동기화하지 않고 엔진 전환">
+<!ENTITY context.switchEngineNoCookie "쿠키 동기화하지 않고 엔진 전환">
+<!ENTITY context.settings "설정...">
+<!ENTITY features.caption "특수 기능">
+<!ENTITY features.adblock "Adblock Plus 지원 (Firefox를 다시 시작해야 적용 됩니다.)">

@@ -1,0 +1,87 @@
+<!ENTITY dialog.title "Coral IETab 選項">
+<!ENTITY toolsmenu.label "Coral IETab 選項">
+<!ENTITY toolbar.button.label "Coral IETab">
+<!ENTITY toolbar.button.display "Coral IETab 按鈕">
+<!ENTITY toolbar.button.tooltip0 "左鍵: 切換此頁的瀏覽引擎。">
+<!ENTITY toolbar.button.tooltip1 "中鍵: 切換此頁的瀏覽引擎 (開新分頁)。">
+<!ENTITY toolbar.button.tooltip2 "右鍵: 快顯功能表。">
+<!ENTITY popup.viewpage "用 Coral IETab 檢視此頁">
+<!ENTITY popup.viewpage.key "E">
+<!ENTITY popup.viewlink "用 Coral IETab 開啟鏈結">
+<!ENTITY popup.viewlink.key "E">
+<!ENTITY popup.bookmark "用 Coral IETab 開啟">
+<!ENTITY popup.bookmark.key "E">
+<!ENTITY popup.tabbar.switch "切換此頁的瀏覽引擎">
+<!ENTITY popup.tabbar.switch.key "E">
+<!ENTITY popup.viewpage.extapp "用外部程式瀏覽此頁">
+<!ENTITY popup.viewpage.extapp.key "X">
+<!ENTITY popup.viewlink.extapp "用外部程式開啟鏈結">
+<!ENTITY popup.viewlink.extapp.key "X">
+<!ENTITY popup.bookmark.extapp "用外部程式開啟">
+<!ENTITY popup.bookmark.extapp.key "X">
+<!ENTITY popup.tabbar.extapp "用外部程式開啟">
+<!ENTITY popup.tabbar.extapp.key "X">
+<!ENTITY filter.label "網站篩選器">
+<!ENTITY filter.enabled "啟用網站篩選器">
+<!ENTITY filter.column.rule "規則">
+<!ENTITY filter.column.enabled "啟用">
+<!ENTITY filter.url.label "新增規則:">
+<!ENTITY filter.button.add "新增">
+<!ENTITY filter.button.delete "刪除">
+<!ENTITY general.label "一般設定">
+<!ENTITY interface.caption "顯示界面:">
+<!ENTITY interface.toolsmenu "工具選單項目">
+<!ENTITY interface.toolsmenu.icon "工具選單圖示">
+<!ENTITY interface.statusbar "狀態列圖示">
+<!ENTITY switch.caption "當瀏覽引擎切換時:">
+<!ENTITY switch.handleurl "總是以目前的瀏覽引擎開啟新網址">
+<!ENTITY switch.alwaysnew "用新分頁開啟切換結果">
+<!ENTITY switch.focustab "開啟新分頁時自動切換至該分頁">
+<!ENTITY context.label "右鍵選單">
+<!ENTITY context.caption.tabsmenu "分頁標籤右鍵選單中顯示以下項目:">
+<!ENTITY context.caption.pagelink "網頁內容右鍵選單中顯示以下項目:">
+<!ENTITY context.caption.bookmark "個人書籤右鍵選單中顯示以下項目:">
+<!ENTITY context.embed "內嵌引擎">
+<!ENTITY context.extapp "外部程式">
+<!ENTITY context.icon "圖示">
+<!ENTITY external.label "外部程式">
+<!ENTITY external.caption "外部程式設定">
+<!ENTITY external.path.label "路徑:">
+<!ENTITY external.param.label "參數:">
+<!ENTITY external.button.browse "瀏覽">
+<!ENTITY external.ctrlclick "使用 [CTRL]+[左鍵點擊] Coral IETab 按鈕時，用外部程式開啟網址。">
+<!ENTITY external.button.reset "使用 Internet Explorer">
+<!ENTITY apply.label "套用">
+<!ENTITY settings.label "匯入/匯出...">
+<!ENTITY settings.default "還原預設值">
+<!ENTITY settings.import "匯入設定...">
+<!ENTITY settings.export "匯出設定...">
+
+<!ENTITY rules.column "規則">
+<!ENTITY enabled.column "啟用">
+<!ENTITY cookies.column "同步 Cookie">
+<!ENTITY useragent.column "同步 User-Agent">
+<!ENTITY switchback.column "進入新頁面後切回 Firefox 引擎">
+<!ENTITY settings.import-ietab "從舊版的 IETab 匯入設定">
+<!ENTITY switch.show-prompt "切換到 IE 時顯示使用替代方法的提示">
+<!ENTITY context.edit.label "編輯規則">
+<!ENTITY context.moveup.label "上移">
+<!ENTITY context.movedown.label "下移">
+<!ENTITY context.enable.label "啟用">
+<!ENTITY context.disable.label "停用">
+<!ENTITY edit.label "編輯">
+<!ENTITY edit.accesskey "E">
+<!ENTITY cut.label "剪下">
+<!ENTITY cut.accesskey "T">
+<!ENTITY copy.label "複製">
+<!ENTITY copy.accesskey "C">
+<!ENTITY paste.label "貼上">
+<!ENTITY paste.accesskey "P">
+<!ENTITY remove.label "刪除">
+<!ENTITY remove.accesskey "D">
+<!ENTITY context.switchEngine "切換瀏覽引擎">
+<!ENTITY context.switchEngineSafe "切換瀏覽引擎 (不同步User Agent)">
+<!ENTITY context.switchEngineNoCookie "切換瀏覽引擎 (不同步Cookie)">
+<!ENTITY context.settings "設定...">
+<!ENTITY features.caption "特別功能:">
+<!ENTITY features.adblock "支援 Adblock Plus (重新啟動 Firefox 之後生效)">

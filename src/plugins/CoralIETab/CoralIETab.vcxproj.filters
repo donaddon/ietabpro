@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="CoralIETab.cpp" />
+    <ClCompile Include="CoralIETabNPObject.cpp" />
+    <ClCompile Include="CriticalSection.cpp" />
+    <ClCompile Include="HttpFilterSink.cpp" />
+    <ClCompile Include="IEHostWindow.cpp" />
+    <ClCompile Include="Misc.cpp" />
+    <ClCompile Include="nsConfigManager.cpp" />
+    <ClCompile Include="nsPluginInstance.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="adblockplus\adblockplus.cpp">
+      <Filter>adblockplus</Filter>
+    </ClCompile>
+    <ClCompile Include="adblockplus\ElemHideFilters.cpp">
+      <Filter>adblockplus</Filter>
+    </ClCompile>
+    <ClCompile Include="adblockplus\Filter.cpp">
+      <Filter>adblockplus</Filter>
+    </ClCompile>
+    <ClCompile Include="adblockplus\FilterList.cpp">
+      <Filter>adblockplus</Filter>
+    </ClCompile>
+    <ClCompile Include="adblockplus\FilterStorage.cpp">
+      <Filter>adblockplus</Filter>
+    </ClCompile>
+    <ClCompile Include="adblockplus\HttpRequestFilter.cpp">
+      <Filter>adblockplus</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CoralIETabNPObject.h" />
+    <ClInclude Include="CriticalSection.h" />
+    <ClInclude Include="HttpFilterSink.h" />
+    <ClInclude Include="IEHostWindow.h" />
+    <ClInclude Include="Misc.h" />
+    <ClInclude Include="nsConfigManager.h" />
+    <ClInclude Include="nsPluginInstance.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="adblockplus\adblockplus.h">
+      <Filter>adblockplus</Filter>
+    </ClInclude>
+    <ClInclude Include="adblockplus\ElemHideFilters.h">
+      <Filter>adblockplus</Filter>
+    </ClInclude>
+    <ClInclude Include="adblockplus\Filter.h">
+      <Filter>adblockplus</Filter>
+    </ClInclude>
+    <ClInclude Include="adblockplus\FilterList.h">
+      <Filter>adblockplus</Filter>
+    </ClInclude>
+    <ClInclude Include="adblockplus\FilterStorage.h">
+      <Filter>adblockplus</Filter>
+    </ClInclude>
+    <ClInclude Include="adblockplus\HttpRequestFilters.h">
+      <Filter>adblockplus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdParty\passthru_app\urlmon_ie7_extras.h">
+      <Filter>passthrough</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdParty\passthru_app\SinkPolicy.h">
+      <Filter>passthrough</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdParty\passthru_app\ProtocolImpl.h">
+      <Filter>passthrough</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdParty\passthru_app\ProtocolCF.h">
+      <Filter>passthrough</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdParty\passthru_app\PassthroughObject.h">
+      <Filter>passthrough</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CoralIETab.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CoralIETab.def" />
+    <None Include="..\3rdParty\passthru_app\SinkPolicy.inl">
+      <Filter>passthrough</Filter>
+    </None>
+    <None Include="..\3rdParty\passthru_app\ProtocolImpl.inl">
+      <Filter>passthrough</Filter>
+    </None>
+    <None Include="..\3rdParty\passthru_app\ProtocolCF.inl">
+      <Filter>passthrough</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="adblockplus">
+      <UniqueIdentifier>{d245a815-d7c0-4067-bf6c-e1a576f5199d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="passthrough">
+      <UniqueIdentifier>{4ed5ad1a-e7f8-421f-87ce-526ad5583859}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

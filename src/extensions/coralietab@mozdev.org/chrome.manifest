@@ -1,0 +1,14 @@
+content	coralietab chrome/content/
+skin	coralietab classic/1.0 chrome/skin/
+
+overlay	chrome://navigator/content/navigator.xul chrome://coralietab/content/seamonkeyOverlay.xul
+overlay	chrome://browser/content/browser.xul chrome://coralietab/content/ietabOverlay.xul
+style	chrome://global/content/customizeToolbar.xul chrome://coralietab/skin/coralietab.css
+
+locale	coralietab	en-US	chrome/locale/en-US/
+locale	coralietab	zh-CN	chrome/locale/zh-CN/
+locale	coralietab	zh-TW	chrome/locale/zh-TW/
+locale	coralietab	ko-KR	chrome/locale/ko-KR/
+locale	coralietab	fr-FR	chrome/locale/fr-FR/
+locale	coralietab	ro-RO	chrome/locale/ro-RO/
+locale	coralietab	ru-RU	chrome/locale/ru-RU/

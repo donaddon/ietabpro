@@ -1,0 +1,25 @@
+<html>
+	<body>
+		<p id="key">Hello!</p>
+		<script type="text/javascript">
+			document.onkeyup = keyUp;
+			document.onkeydown = keyDown;
+
+			function keyDown(e) {
+				document.getElementById("key").innerText = event.keyCode;
+			}
+
+			function keyUp(e) {
+				var s = "";
+				if ( event.ctrlKey ) {
+					 s = "CTRL - " + s;
+				}
+				if ( event.altKey ) {
+					s = "ALT - " + s;
+				}
+				
+				document.getElementById("key").innerText = s + event.keyCode;
+			}
+		</script>
+	</body>
+</html>

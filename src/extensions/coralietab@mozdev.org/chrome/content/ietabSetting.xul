@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://coralietab/skin/ietab.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://coralietab/locale/ietab.dtd">
+
+<dialog id="ietab-dialog"
+      xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+      autosize="true"
+      resizable="no"
+      persist="screenX screenY"
+      buttons="accept,cancel,extra1,extra2"
+      onload="gIeTab.init();"
+      onunload="gIeTab.destory();"
+      ondialogaccept="gIeTab.setOptions();"
+      ondialogextra1="gIeTab.setOptions();"
+      title="&dialog.title;">
+
+   <script type="application/x-javascript" src="chrome://coralietab/content/ietabExtApp.js"/>
+   <script type="application/x-javascript" src="chrome://coralietab/content/ietabSetting.js"/>
+   <script type="application/x-javascript" src="chrome://coralietab/content/ietabUtils.js"/>
+
+   <tabbox>
+      <tabs>
+         <tab label="&filter.label;"/>
+         <tab label="&general.label;"/>
+         <tab label="&context.label;"/>
+         <tab label="&external.label;"/>
+      </tabs>
+
+      <tabpanels>
+         <tabpanel>
+            <vbox flex="1">
+               <hbox align="center" flex="1">
+                    <tree id="rulesList" flex="1" seltype="multiple" width="640" height="270" hidecolumnpicker="true" editable="true">
+                        <treecols context="treecols-context">
+                            <treecol id="col-rules" label="&rules.column;" primary="true" flex="10" persist="width ordinal sortDirection hidden"/>
+                            <splitter class="tree-splitter"/>
+                            <treecol id="col-enabled" label="&enabled.column;" flex="1" type="checkbox" persist="ordinal sortDirection hidden" editable="true"/>
+                            <splitter class="tree-splitter"/>
+                            <treecol id="col-sync-cookies" label="&cookies.column;" flex="1" type="checkbox" persist="ordinal sortDirection hidden" editable="true"/>
+                            <splitter class="tree-splitter"/>
+                            <treecol id="col-sync-useragent" label="&useragent.column;" flex="1" type="checkbox" persist="ordinal sortDirection hidden" editable="true"/>
+                            <splitter class="tree-splitter"/>
+                            <treecol id="col-switchback" label="&switchback.column;" flex="1" type="checkbox" persist="ordinal sortDirection hidden" editable="true"/>
+                        </treecols>
+                
+                        <treechildren id="rulesListChilds" context="listitem-context"/>
+                    </tree>
+                </hbox>
+
+               <hbox align="center">
+               <label id="urllabel" value="&filter.url.label;"/>
+                  <textbox id="urlbox" flex="1"
+                     oninput="gIeTab.updateAddButtonStatus();"/>
+                  <button id="addbtn"
+                     label="&filter.button.add;"
+                     disabled="true"
+                     oncommand="gIeTab.addNewURL();"/>
+               </hbox>
+            </vbox>
+         </tabpanel>
+
+         <tabpanel>
+            <vbox flex="1">
+               <groupbox><caption label="&interface.caption;"/>
+                  <hbox align="center">
+                  <checkbox label="&interface.toolsmenu;" id="toolsmenu"/>
+                  <checkbox label="&interface.toolsmenu.icon;" id="toolsmenu.icon" class="indent"/>
+                  </hbox>
+                  <hbox align="center">
+                  <checkbox label="&interface.statusbar;" id="statusbar"/>
+                  </hbox>
+               </groupbox>
+
+               <groupbox><caption label="&switch.caption;"/>
+                  <hbox align="center">
+                  <checkbox label="&switch.handleurl;" id="handleurl"/>
+                  </hbox>
+                  <hbox align="center">
+                  <checkbox label="&switch.alwaysnew;" id="alwaysnew"/>
+                  </hbox>
+                  <hbox align="center">
+                  <checkbox label="&switch.focustab;" id="focustab"/>
+                  </hbox>
+                  <hbox align="center">
+                  <checkbox label="&switch.show-prompt;" id="showprompt"/>
+                  </hbox>
+               </groupbox>
+               
+               <groupbox><caption label="&features.caption;"/>
+                  <hbox align="center">
+                  <checkbox label="&features.adblock;" id="adblock"/>
+                  </hbox>
+               </groupbox>
+            </vbox>
+         </tabpanel>
+
+         <tabpanel>
+            <vbox flex="1">
+               <groupbox><caption label="&context.caption.tabsmenu;"/>
+                  <hbox align="center">
+                     <checkbox label="&popup.tabbar.switch;" id="tabsmenu.embed"/>
+                     <checkbox label="&popup.tabbar.extapp;" id="tabsmenu.extapp"/>
+                     <checkbox label="&context.icon;" id="tabsmenu.icon"/>
+                  </hbox>
+               </groupbox>
+               <groupbox><caption label="&context.caption.pagelink;"/>
+                  <hbox align="center">
+                     <checkbox label="&popup.viewpage;" id="pagelink.embed"/>
+                     <checkbox label="&popup.viewpage.extapp;" id="pagelink.extapp"/>
+                     <checkbox label="&context.icon;" id="pagelink.icon"/>
+                  </hbox>
+               </groupbox>
+               <groupbox><caption label="&context.caption.bookmark;"/>
+                  <hbox align="center">
+                     <checkbox label="&popup.bookmark;" id="bookmark.embed"/>
+                     <checkbox label="&popup.bookmark.extapp;" id="bookmark.extapp"/>
+                     <checkbox label="&context.icon;" id="bookmark.icon"/>
+                  </hbox>
+               </groupbox>
+            </vbox>
+         </tabpanel>
+
+         <tabpanel>
+            <vbox flex="1">
+               <groupbox><caption label="&external.caption;"/>
+                  <hbox align="center">
+                     <label value="&external.path.label;"/>
+                     <textbox id="pathbox" flex="1" readonly="true"/>
+                     <button id="browsebtn" label="&external.button.browse;"
+                        oncommand="gIeTab.browseAppPath();"/>
+                  </hbox>
+                  <hbox align="center">
+                     <label value="&external.param.label;"/>
+                     <textbox id="parambox" flex="1"/>
+                  </hbox>
+                  <hbox align="center">
+                     <checkbox label="&external.ctrlclick;" id="ctrlclick"/>
+                  </hbox>
+               </groupbox>
+               <spacer flex="1"/>
+                  <hbox align="center">
+                     <spacer flex="1"/>
+                     <button id="resetbtn" label="&external.button.reset;" flex="1"
+                        oncommand="gIeTab.resetAppPath();"/>
+                     <spacer flex="1"/>
+                  </hbox>
+               <spacer flex="1"/>
+            </vbox>
+         </tabpanel>
+      </tabpanels>
+   </tabbox>
+
+   <hbox class="bottom-buttons">
+      <button dlgtype="extra2" id="myExtra2" label="&settings.label;" popup="settings"/>
+      <spacer flex="1"/>
+      <button dlgtype="accept" id="myAccept"/>
+      <button dlgtype="extra1" id="myExtra1" label="&apply.label;"/>
+      <button dlgtype="cancel" id="myCancel"/>
+   </hbox>
+   
+	<commandset id="ietabCommands">
+		<command id="selectall-command" oncommand="cmd_selectAll()"/>
+		<command id="copy-command" oncommand="cmd_copyToClipboard()"/>
+		<command id="cut-command" oncommand="cmd_copyToClipboard(); gIeTab.delSelected()"/>
+		<command id="paste-command" oncommand="cmd_pasteFromClipboard()"/>
+		<command id="remove-command" oncommand="gIeTab.delSelected()"/>
+		<command id="edit-command" oncommand="cmd_startEditing()"/>
+		<command id="moveup-command" oncommand="cmd_moveRulesUp()"/>
+		<command id="movedown-command" oncommand="cmd_moveRulesDown()"/>
+	</commandset>
+   
+	<keyset id="ietabKeys">
+		<key id="selectall-key" key="a" modifiers="accel" command="selectall-command"/>
+		<key id="copy-key" key="c" modifiers="accel" command="copy-command"/>
+		<key id="cut-key" key="x" modifiers="accel" command="cut-command"/>
+		<key id="paste-key" key="v" modifiers="accel" command="paste-command"/>
+		<key id="edit-key" keycode="VK_F2" command="edit-command"/>
+		<key id="remove-key" keycode="VK_DELETE" command="remove-command"/>
+		<key id="moveup-key" keycode="VK_UP" modifiers="accel" command="moveup-command" />
+		<key id="movedown-key" keycode="VK_DOWN" modifiers="accel"  command="movedown-command" />
+	</keyset>
+
+   <popupset>
+      <popup id="settings" position="before_start">
+         <menuitem id="default" label="&settings.default;" oncommand="gIeTab.restoreDefault();"/>
+         <menuitem id="import"  label="&settings.import;"  oncommand="gIeTab.importSettings();"/>
+         <menuitem id="export"  label="&settings.export;"  oncommand="gIeTab.exportSettings();"/>
+         <menuitem id="import-ietab"  label="&settings.import-ietab;"  oncommand="gIeTab.importSettingsFromIetab();"/>
+      </popup>
+      <popup id="listitem-context">
+		<menuitem id="context-edit" label="&context.edit.label;" command="edit-command" key="edit-key"/>
+		<menuitem id="context-moveup" label="&context.moveup.label;" command="moveup-command" key="moveup-key"/>
+		<menuitem id="context-movedown" label="&context.movedown.label;" command="movedown-command" key="movedown-key"/>
+		<menuseparator/>
+		<menuitem id="context-cut" label="&cut.label;" accesskey="&cut.accesskey;" command="cut-command" key="cut-key"/>
+		<menuitem id="context-copy" label="&copy.label;" accesskey="&copy.accesskey;" command="copy-command" key="copy-key"/>
+		<menuitem id="context-paste" label="&paste.label;" accesskey="&paste.accesskey;" command="paste-command" key="paste-key"/>
+		<menuitem id="context-remove" label="&remove.label;" accesskey="&remove.accesskey;" command="remove-command" key="remove-key"/>
+		<menuseparator/>
+		<menuitem id="context-enable" label="&context.enable.label;" oncommand="enableSelectedRule(true)"/>
+		<menuitem id="context-disable" label="&context.disable.label;" oncommand="enableSelectedRule(false)"/>
+	</popup>
+   </popupset>
+
+</dialog>

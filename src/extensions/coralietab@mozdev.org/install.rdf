@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+ <Description about="urn:mozilla:install-manifest">
+
+   <em:id>coralietab@mozdev.org</em:id>
+   <em:name>Coral IE Tab</em:name>
+   <em:version>1.69.20091202</em:version>
+   <em:description>An enhanced version of IE Tab which enables you to use the embedded IE engine within Mozilla/Firefox.</em:description>
+   <em:creator>quaful@msn.com</em:creator>
+   <em:contributor>Raoul, SeaMonkey support</em:contributor>
+   <em:contributor>Hong Jen Yee (PCMan), author of IE Tab</em:contributor>
+   <em:contributor>yuoo2k, author of IE Tab</em:contributor>
+   <em:translator>Jackbin (jackbin.blogspot.com)</em:translator>
+   <em:translator>Lim Wanoo (wanuwa@hotmail.com)</em:translator>
+   <em:translator>Cătălin ZAMFIRESCU  (x10firefox)</em:translator>
+   <em:translator>Alexis Haeringer</em:translator>
+   <em:homepageURL>http://coralietab.mozdev.org</em:homepageURL>
+   <em:optionsURL>chrome://coralietab/content/ietabSetting.xul</em:optionsURL>
+   <em:iconURL>chrome://coralietab/skin/ietab-icon.png</em:iconURL>
+
+   <!-- Firefox -->
+   <em:targetApplication>
+     <Description>
+       <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+       <em:minVersion>3.0</em:minVersion>
+       <em:maxVersion>3.7a1pre</em:maxVersion>
+     </Description>
+   </em:targetApplication>
+   
+	<!-- SeaMonkey -->
+	<em:targetApplication>
+		<Description>
+		<em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+		<em:minVersion>2.0b1pre</em:minVersion>
+		<em:maxVersion>2.1a1pre</em:maxVersion>
+		</Description>
+	</em:targetApplication>
+
+   <em:localized>
+     <Description>
+       <em:locale>zh-CN</em:locale>
+       <em:name>Coral IE Tab</em:name>
+       <em:creator>quaful@msn.com</em:creator>
+       <em:contributor>Raoul, SeaMonkey support</em:contributor>
+       <em:contributor>Hong Jen Yee (PCMan), IE Tab 原作者</em:contributor>
+       <em:contributor>yuoo2k, IE Tab 原作者</em:contributor>
+       <em:homepageURL>http://coralietab.mozdev.org</em:homepageURL>
+       <em:description>使用 IE 内核浏览不兼容 Firefox 的网页！</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>zh-TW</em:locale>
+       <em:name>Coral IE Tab</em:name>
+       <em:creator>quaful@msn.com</em:creator>
+       <em:contributor>Raoul, SeaMonkey support</em:contributor>
+       <em:contributor>Hong Jen Yee (PCMan)</em:contributor>
+       <em:contributor>yuoo2k</em:contributor>
+       <em:translator>Jackbin (jackbin.blogspot.com)</em:translator>
+       <em:homepageURL>http://coralietab.mozdev.org</em:homepageURL>
+       <em:description>增強版的 IE Tab，讓您可以直接在 Firefox 分頁中以內嵌的 IE 引擎，瀏覽 IE Only 的網頁！</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>ko-KR</em:locale>
+       <em:name>Coral IE Tab</em:name>
+       <em:creator>quaful@msn.com</em:creator>
+       <em:contributor>Raoul, SeaMonkey support</em:contributor>
+       <em:contributor>Hong Jen Yee (PCMan), IE Tab 저자</em:contributor>
+       <em:contributor>yuoo2k, IE Tab 저자</em:contributor>
+       <em:translator>Lim Wanoo (wanuwa@hotmail.com)</em:translator>
+       <em:homepageURL>http://coralietab.mozdev.org</em:homepageURL>
+       <em:description>향상된 성능의 IE Tab, Mozilla/Firefox에 내장된 엔진으로 IE를 사용할 수 있습니다 !</em:description>
+     </Description>
+   </em:localized>
+   
+   <em:localized>
+     <Description>
+       <em:locale>ro-RO</em:locale>
+       <em:name>Coral IE Tab</em:name>
+       <em:creator>quaful@msn.com</em:creator>
+       <em:contributor>Raoul, SeaMonkey support</em:contributor>
+       <em:contributor>Hong Jen Yee (PCMan), creator al IE Tab</em:contributor>
+       <em:contributor>yuoo2k, creator al IE Tab</em:contributor>
+       <em:translator>Cătălin ZAMFIRESCU  (x10firefox)</em:translator>
+       <em:description>Versiune îmbunătăţită a extensiei IE Tab care permite încapsularea motorului de interpretare IE în Mozilla/Firefox.</em:description>
+     </Description>
+   </em:localized>
+
+   <em:localized>
+     <Description>
+       <em:locale>fr-FR</em:locale>
+       <em:name>Coral IE Tab</em:name>
+       <em:creator>quaful@msn.com</em:creator>
+       <em:contributor>Raoul, SeaMonkey support</em:contributor>
+       <em:contributor>Hong Jen Yee (PCMan), créateur initial de IE Tab</em:contributor>
+       <em:contributor>yuoo2k, créateur initial de IE Tab</em:contributor>
+       <em:translator>Alexis Haeringer</em:translator>
+       <em:description>Extension qui donne la possiblité d'utiliser le moteur de rendu du "Microsoft Internet Explorer", installé sur votre système d'exploitation, au sein du navigateur "Mozilla Firefox"</em:description>
+     </Description>
+   </em:localized>
+   
+   <em:localized>
+     <Description>
+       <em:locale>ru-RU</em:locale>
+       <em:name>Coral IE Tab</em:name>
+       <em:creator>quaful@msn.com</em:creator>
+       <em:contributor>Raoul, поддержа SeaMonkey</em:contributor>
+       <em:contributor>Hong Jen Yee (PCMan), создатель IE Tab</em:contributor>
+       <em:contributor>yuoo2k, создатель IE Tab</em:contributor>
+       <em:translator>Raoul</em:translator>
+       <em:description>Улучшенная версия IE Tab, позволяющая использовать для просмотра страниц движок Internet Explorer внутри Mozilla/Firefox/SeaMonkey.</em:description>
+     </Description>
+   </em:localized>
+ </Description>
+</RDF>
